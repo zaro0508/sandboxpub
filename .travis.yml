@@ -2,6 +2,7 @@ language: objective-c
 osx_image: xcode8.2
 before_install:
   - brew update
+  - echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc
 install:
   - ./travis/install-fastlane.sh
   - export PATH="$HOME/.fastlane/bin:$PATH"
