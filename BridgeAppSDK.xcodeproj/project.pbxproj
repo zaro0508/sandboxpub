@@ -2141,8 +2141,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BridgeAppSDKSample/BridgeAppSDKSample.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sage Bionetworks (4XD5259B77)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sage Bionetworks (4XD5259B77)";
 				DEVELOPMENT_TEAM = 4B822CZK9N;
 				INFOPLIST_FILE = BridgeAppSDKSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -2163,8 +2163,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BridgeAppSDKSample/BridgeAppSDKSample.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sage Bionetworks (4XD5259B77)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sage Bionetworks (4XD5259B77)";
 				DEVELOPMENT_TEAM = 4B822CZK9N;
 				INFOPLIST_FILE = BridgeAppSDKSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -2271,8 +2271,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sage Bionetworks (4XD5259B77)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sage Bionetworks (4XD5259B77)";
 				DEVELOPMENT_TEAM = 4B822CZK9N;
 				IBSC_MODULE = Sage_Cardio_Challenge_Extension;
 				INFOPLIST_FILE = "Sage Cardio Challenge/Info.plist";
@@ -2297,8 +2297,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sage Bionetworks (4XD5259B77)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sage Bionetworks (4XD5259B77)";
 				DEVELOPMENT_TEAM = 4B822CZK9N;
 				IBSC_MODULE = Sage_Cardio_Challenge_Extension;
 				INFOPLIST_FILE = "Sage Cardio Challenge/Info.plist";
