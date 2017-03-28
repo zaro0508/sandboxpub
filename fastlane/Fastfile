@@ -22,6 +22,26 @@ platform :ios do
     
   end
 
+ desc "Fetches provisioning profiles so you can build locally and deploy to your device"
+ lane :certificates do
+   match(type: "development", app_identifier: ["org.sagebase.BridgeAppSDK", "org.sagebase.BridgeAppSDKSample", "org.sagebase.BridgeAppSDKSample.watchkitapp", "org.sagebase.BridgeAppSDKSample.watchkitapp.watchkitextension"], readonly: true)
+ end
+
+ desc "Archive and export app"
+ lane :archive do |options|
+    scheme = options[:scheme]
+    certificates
+    gym(
+      scheme: "#{scheme}",
+      clean: true,
+      include_bitcode: true,
+      output_directory: "./build",
+      output_name: "BridgeAppSDKSample.ipa",
+      export_method: "development",
+      destination: "generic/platform=iOS",
+    )
+  end
+
   desc "Runs all the tests"
   lane :test do |options|
     if options[:scheme]

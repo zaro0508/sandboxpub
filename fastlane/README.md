@@ -23,12 +23,22 @@ xcode-select --install
 </tr>
 <tr>
 <td width="33%"><code>brew cask install fastlane</code></td>
-<td width="33%"><a href="https://download.fastlane.tools/fastlane.zip">Download the zip file</a>. Then double click on the <code>install</code> script (or run it in a terminal window).</td>
+<td width="33%"><a href="https://download.fastlane.tools">Download the zip file</a>. Then double click on the <code>install</code> script (or run it in a terminal window).</td>
 <td width="33%"><code>sudo gem install fastlane -NV</code></td>
 </tr>
 </table>
 # Available Actions
 ## iOS
+### ios certificates
+```
+fastlane ios certificates
+```
+Fetches provisioning profiles so you can build locally and deploy to your device
+### ios archive
+```
+fastlane ios archive
+```
+Archive and export app
 ### ios test
 ```
 fastlane ios test

@@ -6,5 +6,5 @@ install:
   - ./travis/install-fastlane.sh
   - export PATH="$HOME/.fastlane/bin:$PATH"
 script:
-  - ./travis/run-tests.sh
-
+    #  - ./travis/run-tests.sh
+  - ./travis/mytest.sh
