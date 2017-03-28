@@ -12,6 +12,7 @@ script:
 
 # deploy latest build
 deploy:
+  skip_cleanup: true
   provider: s3
   access_key_id: AKIAICA2M6XGX62Q4NTQ
   secret_access_key:
