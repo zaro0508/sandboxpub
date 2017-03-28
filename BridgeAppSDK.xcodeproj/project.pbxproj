@@ -1329,6 +1329,7 @@
 					};
 					801040B11C5A843D00D26E19 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4B822CZK9N;
 						LastSwiftMigration = 0800;
 					};
 					801040BA1C5A843D00D26E19 = {
@@ -1340,12 +1341,12 @@
 					FF86303E1E709C9D0077AC57 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4B822CZK9N;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					FF86304A1E709C9E0077AC57 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4B822CZK9N;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -2181,9 +2182,10 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 15;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4B822CZK9N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 15;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2207,9 +2209,10 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 15;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4B822CZK9N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 15;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2276,6 +2279,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.sagebase.BridgeAppSDKSample.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "daac6901-a4e1-4b33-b0d4-8fbc5720ca1d";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development org.sagebase.BridgeAppSDKSample.watchkitapp";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -2300,6 +2305,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.sagebase.BridgeAppSDKSample.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "daac6901-a4e1-4b33-b0d4-8fbc5720ca1d";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development org.sagebase.BridgeAppSDKSample.watchkitapp";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -2319,6 +2326,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.sagebase.BridgeAppSDKSample.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "6675745f-687b-487e-8397-d73b6461156f";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development org.sagebase.BridgeAppSDKSample.watchkitapp.watchkitextension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -2339,6 +2348,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.sagebase.BridgeAppSDKSample.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "6675745f-687b-487e-8397-d73b6461156f";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development org.sagebase.BridgeAppSDKSample.watchkitapp.watchkitextension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
