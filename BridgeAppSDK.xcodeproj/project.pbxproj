@@ -1329,8 +1329,8 @@
 					};
 					801040B11C5A843D00D26E19 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 4B822CZK9N;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 					801040BA1C5A843D00D26E19 = {
 						CreatedOnToolsVersion = 7.2;
@@ -2185,7 +2185,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 15;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4B822CZK9N;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 15;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2212,7 +2212,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 15;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4B822CZK9N;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 15;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
