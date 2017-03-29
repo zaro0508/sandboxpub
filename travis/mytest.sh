@@ -16,6 +16,6 @@ set -ex
 if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then
     fastlane test scheme:"BridgeAppSDK"
 elif [ "$TRAVIS_BRANCH" = "master" ]; then
-    fastlane archive scheme:"BridgeAppSDKSample"
+    fastlane ci_archive scheme:"BridgeAppSDKSample"
 fi
 exit $?

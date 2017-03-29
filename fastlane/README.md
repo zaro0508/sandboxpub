@@ -43,7 +43,7 @@ Archive and export app
 ```
 fastlane ios ci_archive
 ```
-CI pipeline
+This lane is for CI bots to archive and export
 ### ios test
 ```
 fastlane ios test
