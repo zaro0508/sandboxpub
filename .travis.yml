@@ -1,7 +1,7 @@
 language: objective-c
 osx_image: xcode8.2
-xcode_workspace: BridgeAppSDK.xcodeproj
-xcode_scheme: BridgeAppSDKSample
+xcode_project: BridgeAppSDK.xcodeproj
+xcode_scheme: BridgeAppSDK
 cache:
 - bundler
 before_install:
@@ -10,10 +10,12 @@ before_install:
 - "ls -al .."
 - "ls -al"
 install:
-- "./travis/install-fastlane.sh"
+- "brew cask install fastlane"
+- "gem update fastlane"
+# - "./travis/install-fastlane.sh"
 - export PATH="$HOME/.fastlane/bin:$PATH"
 script:
-- "./travis/mytest.sh"
+- "./travis/build.sh"
 deploy:
   skip_cleanup: true
   provider: s3
