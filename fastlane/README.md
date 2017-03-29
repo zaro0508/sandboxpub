@@ -40,7 +40,7 @@ fastlane ios archive
 ```
 Archive and export app
 
-Usage fastlane archive scheme: "BridgeSDKAppSample" export_method: "development"
+Usage fastlane archive scheme:"BridgeSDKAppSample" export_method:"development"
 ### ios ci_archive
 ```
 fastlane ios ci_archive
