@@ -8,6 +8,7 @@ install:
 - export PATH="$HOME/.fastlane/bin:$PATH"
 script:
 - "./travis/mytest.sh"
+- "ls -al"
 deploy:
   skip_cleanup: true
   provider: s3
