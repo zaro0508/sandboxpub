@@ -39,6 +39,11 @@ Fetches provisioning profiles so you can build locally and deploy to your device
 fastlane ios archive
 ```
 Archive and export app
+### ios ci_archive
+```
+fastlane ios ci_archive
+```
+CI pipeline
 ### ios test
 ```
 fastlane ios test

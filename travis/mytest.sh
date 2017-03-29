@@ -6,8 +6,16 @@ set -ex
 #if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
 #security find-identity -v -p codesigning
 #fastlane --verbose --capture_output archive scheme:"Smart4SURE"
-fastlane --capture_output archive scheme:"BridgeAppSDKSample"
 #fastlane certificates
+# fastlane --capture_output archive scheme:"BridgeAppSDKSample"
 # xcodebuild -scheme Smart4SURE archive | xcpretty
-exit $?
+# exit $?
 #fi
+
+
+if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then
+    fastlane test scheme:"BridgeAppSDK"
+elif [ "$TRAVIS_BRANCH" = "master" ]; then
+    fastlane archive scheme:"BridgeAppSDKSample"
+fi
+exit $?
