@@ -39,6 +39,8 @@ Fetches provisioning profiles so you can build locally and deploy to your device
 fastlane ios archive
 ```
 Archive and export app
+
+Usage fastlane archive scheme: "BridgeSDKAppSample" export_method: "development"
 ### ios ci_archive
 ```
 fastlane ios ci_archive

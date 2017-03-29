@@ -7,7 +7,7 @@
 # All lines starting with a # are ignored when running `fastlane`
 
 # If you want to automatically update fastlane if a new version is available:
-update_fastlane
+# update_fastlane
 
 # This is the minimum version number required.
 # Update this, if you use features of a newer version
@@ -35,11 +35,11 @@ platform :ios do
     )
 
     match(
-      type: "development",
-      app_identifier: ["org.sagebase.BridgeAppSDK", "org.sagebase.BridgeAppSDKSample", "org.sagebase.BridgeAppSDKSample.watchkitapp", "org.sagebase.BridgeAppSDKSample.watchkitapp.watchkitextension"],
+#      type: "development",
+#      app_identifier: ["org.sagebase.BridgeAppSDK", "org.sagebase.BridgeAppSDKSample", "org.sagebase.BridgeAppSDKSample.watchkitapp", "org.sagebase.BridgeAppSDKSample.watchkitapp.watchkitextension"],
       keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
       keychain_password: ENV["MATCH_PASSWORD"],
-      readonly: true
+#      readonly: true
     )
 
     sh("security find-identity -v -p codesigning")
@@ -47,15 +47,17 @@ platform :ios do
 
 
  desc "Archive and export app"
+ desc "Usage fastlane archive scheme:\"BridgeSDKAppSample\" export_method:\"development\""
  lane :archive do |options|
     scheme = options[:scheme]
+    export_method = options[:export_method]
     gym(
       scheme: "#{scheme}",
       clean: true,
       include_bitcode: true,
       output_directory: "./build",
-      output_name: "BridgeAppSDKSample.ipa",
-      export_method: "development",
+      output_name: "#{scheme}.ipa",
+      export_method: "#{export_method}",
       destination: "generic/platform=iOS",
     )
   end
@@ -63,8 +65,9 @@ platform :ios do
  desc "This lane is for CI bots to archive and export"
  lane :ci_archive do |options|
     scheme = options[:scheme]
+    export_method = options[:export_method]
     certificates
-    archive
+    archive(scheme: options[:scheme],export_method: options[:export_method])
   end
 
   desc "Runs all the tests"
